@@ -4,6 +4,8 @@ This document outlines the design details for the infrastructure configuration a
 
 ## 1. Infrastructure Optimization and Automation
 
+### Architecture
+![ECS Architecture](./assets/architecture2.png "ECS Architecture")
 ### Infrastructure Provisioning
 
 **Django Web App and PG Admin:**
@@ -53,7 +55,7 @@ This document outlines the design details for the infrastructure configuration a
 - Contains the infrastructure code for the pipeline to automatically deploy dev and prod services on new Docker image push.
 
 ## 2. CI/CD Pipeline Setup
-
+![AWS Pipeline Blue/Green](./assets/cicd.png "AWS Pipeline Blue/Green")
 ### Introduction
 
 This document outlines the design details for the deployment of the project using AWS Pipeline to automate the entire process.
@@ -83,7 +85,7 @@ This document outlines the design details for the deployment of the project usin
 - A Lambda function will trigger deployments upon updates to the `latest` and `dev-latest` tags in the ECR repository.
 
 ## 3. Developer Workflow
-
+![Developer Workflow](./assets/workflow.png "Developer Workflow")
 ### Dev/Staging Flow
 
 - Developers work on feature branches and create pull requests to automatically deploy new features to the dev cluster for testing.
@@ -109,6 +111,11 @@ This document outlines the design details for the deployment of the project usin
 
 - No manual creation of resources or projects; infrastructure as code will be used for the entire project, allowing for easy recovery and reconfiguration.
 
-## Conclusion
 
-This setup ensures a robust, automated, and scalable infrastructure for the project, with a clear CI/CD pipeline to streamline deployments and manage changes efficiently. For any issues or setup, refer to the commands and instructions in the Repository Readme file to revert everything to normal.
+## Some Sample Architectures
+### Locomotive Movies Architecture
+![Locomotive Architecture](./assets/otherSampleInfra.png "Locmotive Architecture")
+### Chatbot Signed Sessions Architecture
+![Microservices Architecture](./assets/microservices.jpg "Microservices Architecture")
+### Multi Account AWS Architecture
+![Networking Architecture](./assets/enigma.png "Networking Architecture")
