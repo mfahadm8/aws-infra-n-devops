@@ -1,4 +1,4 @@
-# Project Infrastructure and CI/CD Pipeline Setup
+# AWS Infrastructure and DevOps Sample Work
 
 This document outlines the design details for the infrastructure configuration and deployment of the project, focusing on infrastructure optimization, automation, and CI/CD pipeline setup. The infrastructure will be managed using AWS Cloud Development Kit (CDK), ensuring a streamlined, automated deployment process.
 
