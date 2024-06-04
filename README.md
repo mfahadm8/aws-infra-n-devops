@@ -55,7 +55,7 @@ This document outlines the design details for the infrastructure configuration a
 - Contains the infrastructure code for the pipeline to automatically deploy dev and prod services on new Docker image push.
 
 ## 2. CI/CD Pipeline Setup
-![AWS Pipeline Blue/Green](./assets/cicd.png "AWS Pipeline Blue/Green")
+![AWS Pipeline Blue/Green](./assets/cicid.png "AWS Pipeline Blue/Green")
 ### Introduction
 
 This document outlines the design details for the deployment of the project using AWS Pipeline to automate the entire process.
